@@ -22,10 +22,10 @@ const Signup = ({history}) => {
 
     const sendData = () => {
         history.push("./dashboard2",{
-            fName : {fName},
-            lName : {lName},
-            email:{email},
-            num:{num}
+            fName : fName,
+            lName : lName,
+            email:email,
+            num:num
         })
     }
 
@@ -36,7 +36,7 @@ const Signup = ({history}) => {
           <input type="text" placeholder="last-name" value={lName} onChange={changeLname}/>
           <input type="text" placeholder="email" value={email} onChange={changeEmail}/>
           <input type="text" placeholder="Contact Number" value={num} onChange={changeNum}/>
-        <button onClick={sendData}>Register</button>
+             <button onClick={sendData}>Register</button>
 
 
      

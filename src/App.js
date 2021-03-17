@@ -5,6 +5,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Dashboard from "./components/Dashboard";
 import Dashboard2 from "./components/Dashboard2";
+import Myprofile from "./components/Myprofile";
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/signup" component={Signup} />        
           <Route exact path="/dashboard" component={Dashboard} />
           <Route exact path="/dashboard2" component={Dashboard2} />
+          <Route exact path="/myprofile" component={Myprofile} />
         </Switch>
       </Router>
     </div>

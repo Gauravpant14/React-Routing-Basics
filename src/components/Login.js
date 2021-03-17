@@ -15,7 +15,7 @@ const Login = ({history}) => {
     return (
         <div>
             <input type="text" value={name} onChange={getName}/>
-            <h1>hello i am in login </h1>
+            <input type="password" />
             <button onClick={dashBoardFun}>Login</button>
         </div>
     )

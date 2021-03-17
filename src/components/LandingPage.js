@@ -11,8 +11,8 @@ const LandingPage = ({history,location}) => {
         <div>
            <button onClick={signUpPage}>Signup</button> 
            <button onClick={loginPage}>Login</button>
-           <button>Already have an account</button>
-           <button>Don't have an account</button>
+           <button onClick={loginPage}>Already have an account</button>
+           <button onClick={signUpPage}>Don't have an account</button>
         </div>
     )
 }
