@@ -5,7 +5,7 @@ const Login = ({history}) => {
    
     const dashBoardFun =() => {      
         history.push("./dashboard",{
-            firstName:name
+            fName:name
         })
     }
 

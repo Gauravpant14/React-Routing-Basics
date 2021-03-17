@@ -6,9 +6,7 @@ const Signup = ({history}) => {
     const[lName,setLname] = useState()
     const[email,setEmail] = useState()
     const[num,setNum] = useState()
-    const dashboardInfo = (e) => {
-        e.preventDefault();
-    }
+    
     const changeFname = (e) => {
         setFname(e.target.value);
     }
@@ -22,10 +20,10 @@ const Signup = ({history}) => {
         setNum(e.target.value)
     }
 
-    const sendData = (e) => {
-        history.push("./dashboard",{
+    const sendData = () => {
+        history.push("./dashboard2",{
             fName : {fName},
-            lastName : {lName},
+            lName : {lName},
             email:{email},
             num:{num}
         })
@@ -33,7 +31,7 @@ const Signup = ({history}) => {
 
   return (
     <div>
-      <form onSubmit={dashboardInfo}>
+      
           <input type="text" placeholder="first-name" value={fName} onChange={changeFname}/>
           <input type="text" placeholder="last-name" value={lName} onChange={changeLname}/>
           <input type="text" placeholder="email" value={email} onChange={changeEmail}/>
@@ -41,7 +39,7 @@ const Signup = ({history}) => {
         <button onClick={sendData}>Register</button>
 
 
-      </form>
+     
     </div>
   );
 };
