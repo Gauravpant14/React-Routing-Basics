@@ -20,12 +20,13 @@ const Signup = ({ history }) => {
   };
 
   const sendData = () => {
-    history.push("./dashboard2", {
+    localStorage.setItem("mydata",JSON.stringify({
       fName: fName,
       lName: lName,
       email: email,
       num: num,
-    });
+    }) );
+   history.push("./dashboard2");
   };
 
   return (
